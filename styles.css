@@ -46,7 +46,7 @@ body, html {
   }
   
   .photo-container img {
-    width: 30%; /* Maak de foto's kleiner door de breedte aan te passen */
+    width: 20%; /* Maak de foto's kleiner door de breedte aan te passen */
     height: auto; /* Behoud de originele verhoudingen van de foto's */
     border-radius: 5px; /* Optioneel: afgeronde hoeken */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optioneel: subtiele schaduw */
