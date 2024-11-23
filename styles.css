@@ -1,0 +1,94 @@
+/* style.css */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url('/Images/bergenlandschap.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+  }
+  
+  .background {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+  }
+  
+  .container {
+    background: rgba(255, 255, 255, 0.8);
+    width: 60%;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    line-height: 1.6;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+  }
+
+
+  .photo-container {
+    display: flex; /* Zorgt dat de foto's naast elkaar worden geplaatst */
+    justify-content: center; /* Centreert de foto's binnen de container */
+    gap: 20px; /* Ruimte tussen de foto's */
+    margin: 20px 0; /* Ruimte boven en onder de container */
+  }
+  
+  .photo-container img {
+    width: 30%; /* Maak de foto's kleiner door de breedte aan te passen */
+    height: auto; /* Behoud de originele verhoudingen van de foto's */
+    border-radius: 5px; /* Optioneel: afgeronde hoeken */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optioneel: subtiele schaduw */
+  }
+  
+  
+  .post h2, .post h3 {
+    margin-top: 20px;
+    color: #555;
+  }
+
+
+
+
+  footer {
+    background-color: #333; /* Donkere achtergrondkleur */
+    color: #fff; /* Witte tekstkleur */
+    text-align: center; /* Centrerende tekst */
+    padding: 20px 10px; /* Ruimte binnen de footer */
+    margin-top: 40px; /* Optioneel: ruimte boven de footer */
+  }
+  
+  .footer-content p {
+    margin: 0; /* Verwijder standaard marges */
+    font-size: 14px; /* Kleinere tekst voor copyright */
+  }
+  
+  .footer-links {
+    margin-top: 10px; /* Ruimte boven de links */
+  }
+  
+  .footer-links a {
+    color: #ddd; /* Lichtgrijze kleur voor links */
+    text-decoration: none; /* Verwijder onderstreping */
+    margin: 0 10px; /* Ruimte tussen de links */
+    font-size: 14px;
+  }
+  
+  .footer-links a:hover {
+    color: #fff; /* Verander kleur naar wit bij hover */
+  }
+  
+
+ 
+  
