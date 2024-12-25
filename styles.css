@@ -64,7 +64,7 @@ p {
   margin: 20px 0;
   flex-wrap: wrap;
   width: 100%;
-  justify-content: space-evenly; /* Verdeel de ruimte tussen de foto's */
+  justify-content: center; /* Zorgt ervoor dat de foto's in het midden van de container staan */
 }
 
 .photo-container img {
