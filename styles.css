@@ -13,12 +13,11 @@ html, body {
   color: #333;
   line-height: 1.6;
   display: flex;
-  justify-content: center; /* Zorgt ervoor dat de container in het midden van het scherm staat */
-  align-items: flex-start;
-  width: 100%;
+  flex-direction: column; /* Zorgt ervoor dat de footer onder de content komt */
+  justify-content: flex-start;
+  align-items: center; /* Zorgt ervoor dat de inhoud gecentreerd is */
 }
 
-/* Container voor de inhoud */
 .container {
   background: rgba(255, 255, 255, 0.9);
   width: 80%;
@@ -26,9 +25,10 @@ html, body {
   padding: 20px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
+  flex-grow: 1; /* Zorgt ervoor dat de container de beschikbare ruimte vult */
   display: flex;
   flex-direction: column;
-  align-items: center; /* Zorgt ervoor dat de container gecentreerd is */
+  align-items: center;
 }
 
 /* Kopteksten */
@@ -64,15 +64,15 @@ img {
 /* Foto container instellingen */
 .photo-container {
   display: flex;
-  justify-content: center; /* Centraal uitlijnen van de foto's */
+  justify-content: center;
   gap: 20px;
   margin: 20px 0;
-  flex-wrap: wrap; /* Zorgt ervoor dat foto's onder elkaar komen op kleinere schermen */
+  flex-wrap: wrap;
   width: 100%;
 }
 
 .photo-container img {
-  width: 48%; /* Zorgt ervoor dat foto's netjes schalen */
+  width: 48%;
   height: auto;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
@@ -88,6 +88,7 @@ footer {
   padding: 20px;
   margin-top: 40px;
   border-top: 2px solid #444;
+  width: 100%;
 }
 
 .footer-content p {
@@ -110,8 +111,6 @@ footer {
 }
 
 /* Responsief ontwerp voor kleinere schermen */
-
-/* Voor schermen kleiner dan 768px */
 @media (max-width: 768px) {
   .container {
     width: 90%;
@@ -123,7 +122,7 @@ footer {
   }
 
   .photo-container img {
-    width: 100%; /* Maakt de foto's groter op kleinere schermen */
+    width: 100%;
     margin-bottom: 15px;
   }
 
@@ -133,13 +132,12 @@ footer {
   }
 }
 
-/* Voor schermen kleiner dan 480px */
 @media (max-width: 480px) {
   h1 {
     font-size: 1.8rem;
   }
 
   .photo-container img {
-    width: 100%; /* Maakt de foto's groter op zeer kleine schermen */
+    width: 100%;
   }
 }
