@@ -7,17 +7,18 @@ body, html {
   background-size: cover;
   color: #333;
   line-height: 1.6;
+  height: 100vh;
   display: flex;
   justify-content: center; /* Zorgt ervoor dat de container in het midden van het scherm staat */
-  align-items: flex-start; /* Zorgt ervoor dat de container aan de bovenkant begint */
-  height: 100vh;
+  align-items: flex-start;
+  width: 100%;
 }
 
 .background {
   display: flex;
   justify-content: center;
   padding: 20px;
-  width: 100%;
+  width: 100%; /* Zorgt ervoor dat de achtergrond de volledige breedte inneemt */
 }
 
 .container {
@@ -60,7 +61,7 @@ p {
   gap: 20px;
   margin: 20px 0;
   flex-wrap: wrap;
-  width: 100%;
+  width: 100%; /* Zorgt ervoor dat de container de volledige breedte inneemt */
 }
 
 .photo-container img {
@@ -69,7 +70,7 @@ p {
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
   display: block;
-  margin: 0 auto;
+  margin: 0 auto; /* Zorgt ervoor dat ze gecentreerd worden */
 }
 
 footer {
