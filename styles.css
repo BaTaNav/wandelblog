@@ -1,13 +1,17 @@
 /* Algemene instellingen */
-body, html {
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
   font-family: 'Arial', sans-serif;
   background: url('bergenlandschap.jpg') no-repeat center center fixed;
   background-size: cover;
   color: #333;
   line-height: 1.6;
-  height: 100%;
   display: flex;
   justify-content: center; /* Zorgt ervoor dat de container in het midden van het scherm staat */
   align-items: flex-start;
@@ -27,8 +31,8 @@ body, html {
   align-items: center; /* Zorgt ervoor dat de container gecentreerd is */
 }
 
-/* Kopteksten en tekststijl */
-header h1 {
+/* Kopteksten */
+h1 {
   text-align: center;
   font-size: 2.5rem;
   margin-bottom: 20px;
@@ -44,31 +48,31 @@ p {
   font-size: 1rem;
   margin-bottom: 15px;
   text-align: justify;
+  line-height: 1.5;
 }
 
-/* Instellingen voor afbeeldingen in posts */
-.main-image, .photo-container img {
+/* Instellingen voor de afbeeldingen */
+img {
   max-width: 100%;
   height: auto;
   border-radius: 8px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   display: block;
-  margin: 0 auto; /* Zorgt ervoor dat de afbeeldingen gecentreerd worden */
+  margin: 20px auto; /* Zorgt ervoor dat de afbeeldingen gecentreerd worden */
 }
 
 /* Foto container instellingen */
 .photo-container {
   display: flex;
-  justify-content: center;
+  justify-content: center; /* Centraal uitlijnen van de foto's */
   gap: 20px;
   margin: 20px 0;
-  flex-wrap: wrap;
+  flex-wrap: wrap; /* Zorgt ervoor dat foto's onder elkaar komen op kleinere schermen */
   width: 100%;
-  justify-content: center; /* Zorgt ervoor dat de foto's in het midden van de container staan */
 }
 
 .photo-container img {
-  width: 48%; /* Zorgt ervoor dat foto's mooi schalen */
+  width: 48%; /* Zorgt ervoor dat foto's netjes schalen */
   height: auto;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
@@ -114,7 +118,7 @@ footer {
     padding: 10px;
   }
 
-  header h1 {
+  h1 {
     font-size: 2rem;
   }
 
@@ -131,7 +135,7 @@ footer {
 
 /* Voor schermen kleiner dan 480px */
 @media (max-width: 480px) {
-  header h1 {
+  h1 {
     font-size: 1.8rem;
   }
 
