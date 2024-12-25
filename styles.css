@@ -59,7 +59,7 @@ p {
 /* Foto container instellingen */
 .photo-container {
   display: flex;
-  justify-content: center;
+  justify-content: center;  /* Zorgt ervoor dat de foto's gecentreerd worden */
   gap: 20px;
   margin: 20px 0;
   flex-wrap: wrap;
@@ -67,12 +67,12 @@ p {
 }
 
 .photo-container img {
-  width: 48%; /* Zorgt ervoor dat de foto's naast elkaar kunnen staan */
+  width: 48%; /* Zorgt ervoor dat foto's naast elkaar staan */
   height: auto;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
   display: block;
-  margin: 0 auto;
+  margin: 0 auto; /* Zorgt ervoor dat ze gecentreerd worden */
 }
 
 /* Footer instellingen */
