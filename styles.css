@@ -1,23 +1,20 @@
 /* Algemene instellingen */
-* {
+body, html {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
-
-html, body {
-  height: 100%;
   font-family: 'Arial', sans-serif;
   background: url('bergenlandschap.jpg') no-repeat center center fixed;
   background-size: cover;
   color: #333;
   line-height: 1.6;
+  height: 100%;
   display: flex;
-  flex-direction: column; /* Zorgt ervoor dat de footer onder de content komt */
-  justify-content: flex-start;
-  align-items: center; /* Zorgt ervoor dat de inhoud gecentreerd is */
+  justify-content: center; /* Zorgt ervoor dat de container in het midden van het scherm staat */
+  align-items: flex-start;
+  width: 100%;
 }
 
+/* Container voor de inhoud */
 .container {
   background: rgba(255, 255, 255, 0.9);
   width: 80%;
@@ -25,14 +22,13 @@ html, body {
   padding: 20px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
-  flex-grow: 1; /* Zorgt ervoor dat de container de beschikbare ruimte vult */
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center; /* Zorgt ervoor dat de container gecentreerd is */
 }
 
-/* Kopteksten */
-h1 {
+/* Kopteksten en tekststijl */
+header h1 {
   text-align: center;
   font-size: 2.5rem;
   margin-bottom: 20px;
@@ -48,17 +44,16 @@ p {
   font-size: 1rem;
   margin-bottom: 15px;
   text-align: justify;
-  line-height: 1.5;
 }
 
-/* Instellingen voor de afbeeldingen */
-img {
+/* Instellingen voor afbeeldingen in posts */
+.main-image, .photo-container img {
   max-width: 100%;
   height: auto;
   border-radius: 8px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   display: block;
-  margin: 20px auto; /* Zorgt ervoor dat de afbeeldingen gecentreerd worden */
+  margin: 0 auto; /* Zorgt ervoor dat de afbeeldingen gecentreerd worden */
 }
 
 /* Foto container instellingen */
@@ -72,7 +67,7 @@ img {
 }
 
 .photo-container img {
-  width: 48%;
+  width: 48%; /* Zorgt ervoor dat de foto's naast elkaar kunnen staan */
   height: auto;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
@@ -88,7 +83,6 @@ footer {
   padding: 20px;
   margin-top: 40px;
   border-top: 2px solid #444;
-  width: 100%;
 }
 
 .footer-content p {
@@ -111,18 +105,20 @@ footer {
 }
 
 /* Responsief ontwerp voor kleinere schermen */
+
+/* Voor schermen kleiner dan 768px */
 @media (max-width: 768px) {
   .container {
     width: 90%;
     padding: 10px;
   }
 
-  h1 {
+  header h1 {
     font-size: 2rem;
   }
 
   .photo-container img {
-    width: 100%;
+    width: 100%; /* Zorgt ervoor dat de foto's onder elkaar komen te staan op kleinere schermen */
     margin-bottom: 15px;
   }
 
@@ -132,12 +128,13 @@ footer {
   }
 }
 
+/* Voor schermen kleiner dan 480px */
 @media (max-width: 480px) {
-  h1 {
+  header h1 {
     font-size: 1.8rem;
   }
 
   .photo-container img {
-    width: 100%;
+    width: 100%; /* Zorgt ervoor dat de foto's onder elkaar komen te staan op zeer kleine schermen */
   }
 }
