@@ -1,94 +1,133 @@
-/* style.css */
+/* Algemene instellingen */
 body, html {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background: url('bergenlandschap.jpg') no-repeat center center fixed;
-    background-size: cover;
-    color: #333;
-  }
-  
-  .background {
-    display: flex;
-    justify-content: center;
-    padding: 20px 0;
-  }
-  
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background: url('bergenlandschap.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #333;
+  line-height: 1.6;
+  display: flex;
+  justify-content: center; /* Zorgt ervoor dat de container in het midden van het scherm staat */
+  align-items: flex-start; /* Zorgt ervoor dat de container aan de bovenkant begint */
+  height: 100vh;
+}
+
+.background {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  width: 100%;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.9);
+  width: 80%;
+  max-width: 1200px;
+  padding: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+header h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+h2, h3 {
+  color: #555;
+  margin-top: 20px;
+}
+
+p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.main-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Foto container instellingen */
+.photo-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px 0;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.photo-container img {
+  width: 48%; /* Zorgt ervoor dat foto's mooi schalen */
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  display: block;
+  margin: 0 auto;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  border-top: 2px solid #444;
+}
+
+.footer-content p {
+  font-size: 14px;
+}
+
+.footer-links {
+  margin-top: 10px;
+}
+
+.footer-links a {
+  color: #ddd;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 14px;
+}
+
+.footer-links a:hover {
+  color: #fff;
+}
+
+/* Responsief ontwerp */
+@media (max-width: 768px) {
   .container {
-    background: rgba(255, 255, 255, 0.8);
-    width: 60%;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 90%;
+    padding: 10px;
   }
-  
-  h1 {
-    text-align: center;
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  .photo-container img {
+    width: 100%; /* Maakt de foto's groter op kleinere schermen */
+    margin-bottom: 15px;
+  }
+
+  .footer-links a {
+    display: block;
     margin-bottom: 10px;
   }
-  
-  p {
-    line-height: 1.6;
-  }
-  
-  img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 20px auto;
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.8rem;
   }
 
-
-  .photo-container {
-    display: flex; /* Zorgt dat de foto's naast elkaar worden geplaatst */
-    justify-content: center; /* Centreert de foto's binnen de container */
-    gap: 20px; /* Ruimte tussen de foto's */
-    margin: 20px 0; /* Ruimte boven en onder de container */
-  }
-  
   .photo-container img {
-    width: 20%; /* Maak de foto's kleiner door de breedte aan te passen */
-    height: auto; /* Behoud de originele verhoudingen van de foto's */
-    border-radius: 5px; /* Optioneel: afgeronde hoeken */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optioneel: subtiele schaduw */
+    width: 100%; /* Maakt de foto's groter op zeer kleine schermen */
   }
-  
-  
-  .post h2, .post h3 {
-    margin-top: 20px;
-    color: #555;
-  }
-
-
-
-
-  footer {
-    background-color: #333; /* Donkere achtergrondkleur */
-    color: #fff; /* Witte tekstkleur */
-    text-align: center; /* Centrerende tekst */
-    padding: 20px 10px; /* Ruimte binnen de footer */
-    margin-top: 40px; /* Optioneel: ruimte boven de footer */
-  }
-  
-  .footer-content p {
-    margin: 0; /* Verwijder standaard marges */
-    font-size: 14px; /* Kleinere tekst voor copyright */
-  }
-  
-  .footer-links {
-    margin-top: 10px; /* Ruimte boven de links */
-  }
-  
-  .footer-links a {
-    color: #ddd; /* Lichtgrijze kleur voor links */
-    text-decoration: none; /* Verwijder onderstreping */
-    margin: 0 10px; /* Ruimte tussen de links */
-    font-size: 14px;
-  }
-  
-  .footer-links a:hover {
-    color: #fff; /* Verander kleur naar wit bij hover */
-  }
-  
-
- 
-  
+}
