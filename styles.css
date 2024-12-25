@@ -3,21 +3,20 @@ body, html {
   margin: 0;
   padding: 0;
   font-family: 'Arial', sans-serif;
-  height: 100%;
-  width: 100%;
-  background: url('bergenlandschap.jpg') no-repeat center center fixed; /* Achtergrondafbeelding instellen */
-  background-size: cover; /* Zorgt ervoor dat de afbeelding altijd het scherm bedekt */
-  background-position: center center; /* Zorgt ervoor dat de afbeelding in het midden staat */
+  background: url('bergenlandschap.jpg') no-repeat center center fixed;
+  background-size: cover;
   color: #333;
   line-height: 1.6;
+  height: 100%;
   display: flex;
   justify-content: center; /* Zorgt ervoor dat de container in het midden van het scherm staat */
   align-items: flex-start;
+  width: 100%;
 }
 
 /* Container voor de inhoud */
 .container {
-  background: rgba(255, 255, 255, 0.9); /* Transparante achtergrond voor de content */
+  background: rgba(255, 255, 255, 0.9);
   width: 80%;
   max-width: 1200px;
   padding: 20px;
@@ -60,21 +59,20 @@ p {
 /* Foto container instellingen */
 .photo-container {
   display: flex;
-  justify-content: center;
+  justify-content: center;  /* Zorgt ervoor dat de foto's gecentreerd worden */
   gap: 20px;
   margin: 20px 0;
   flex-wrap: wrap;
   width: 100%;
-  justify-content: space-evenly; /* Verdeel de ruimte tussen de foto's */
 }
 
 .photo-container img {
-  width: 48%; /* Zorgt ervoor dat foto's mooi schalen */
+  width: 48%; /* Zorgt ervoor dat foto's naast elkaar staan */
   height: auto;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
   display: block;
-  margin: 0 auto;
+  margin: 0 auto; /* Zorgt ervoor dat ze gecentreerd worden */
 }
 
 /* Footer instellingen */
@@ -120,7 +118,7 @@ footer {
   }
 
   .photo-container img {
-    width: 100%; /* Maakt de foto's groter op kleinere schermen */
+    width: 100%; /* Zorgt ervoor dat de foto's onder elkaar komen te staan op kleinere schermen */
     margin-bottom: 15px;
   }
 
@@ -137,6 +135,6 @@ footer {
   }
 
   .photo-container img {
-    width: 100%; /* Maakt de foto's groter op zeer kleine schermen */
+    width: 100%; /* Zorgt ervoor dat de foto's onder elkaar komen te staan op zeer kleine schermen */
   }
 }
