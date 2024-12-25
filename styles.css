@@ -28,6 +28,9 @@ body, html {
   padding: 20px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Zorgt ervoor dat de container gecentreerd is */
 }
 
 header h1 {
@@ -62,6 +65,7 @@ p {
   margin: 20px 0;
   flex-wrap: wrap;
   width: 100%; /* Zorgt ervoor dat de container de volledige breedte inneemt */
+  justify-content: space-evenly; /* Verdeel de ruimte tussen de foto's */
 }
 
 .photo-container img {
