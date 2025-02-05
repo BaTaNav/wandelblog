@@ -15,6 +15,7 @@ body {
   align-items: center;
 }
 
+/* Container voor betere leesbaarheid */
 .container {
   background: rgba(255, 255, 255, 0.9);
   width: 80%;
@@ -25,6 +26,7 @@ body {
   margin-top: 20px;
 }
 
+/* Titels */
 h1 {
   text-align: center;
   font-size: 2.5rem;
@@ -43,6 +45,7 @@ p {
   text-align: justify;
 }
 
+/* Afbeeldingen */
 img {
   max-width: 100%;
   height: auto;
@@ -52,7 +55,7 @@ img {
   margin: 10px auto;
 }
 
-/* Foto-container */
+/* Flexibele afbeelding container */
 .photo-container {
   display: flex;
   flex-wrap: wrap;
@@ -65,7 +68,7 @@ img {
   width: 48%;
 }
 
-/* Footer */
+/* Voettekst */
 footer {
   background-color: #333;
   color: white;
@@ -85,18 +88,44 @@ footer nav a:hover {
   color: #fff;
 }
 
-/* Responsief ontwerp */
+/* 🌟 MEDIA QUERY VOOR GSM-SCHERMEN */
 @media (max-width: 768px) {
   .container {
     width: 90%;
-    padding: 10px;
+    padding: 15px;
   }
 
   h1 {
     font-size: 2rem;
   }
 
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 0.95rem;
+  }
+
+  .photo-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .photo-container img {
     width: 100%;
+  }
+
+  footer {
+    padding: 15px;
+  }
+
+  footer nav a {
+    display: block;
+    margin: 5px 0;
   }
 }
