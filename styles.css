@@ -5,17 +5,14 @@
   box-sizing: border-box;
 }
 
-html, body {
-  height: 100%;
-  font-family: 'Arial', sans-serif;
+body {
+  font-family: Arial, sans-serif;
   background: url('bergenlandschap.jpg') no-repeat center center fixed;
   background-size: cover;
   color: #333;
-  line-height: 1.6;
   display: flex;
-  flex-direction: column; /* Zorgt ervoor dat de footer onder de content komt */
-  justify-content: flex-start;
-  align-items: center; /* Zorgt ervoor dat de inhoud gecentreerd is */
+  flex-direction: column;
+  align-items: center;
 }
 
 .container {
@@ -25,18 +22,14 @@ html, body {
   padding: 20px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
-  flex-grow: 1; /* Zorgt ervoor dat de container de beschikbare ruimte vult */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  margin-top: 20px;
 }
 
-/* Kopteksten */
 h1 {
   text-align: center;
   font-size: 2.5rem;
-  margin-bottom: 20px;
   color: #333;
+  margin-bottom: 20px;
 }
 
 h2, h3 {
@@ -46,71 +39,53 @@ h2, h3 {
 
 p {
   font-size: 1rem;
-  margin-bottom: 15px;
-  text-align: justify;
   line-height: 1.5;
+  text-align: justify;
 }
 
-/* Instellingen voor de afbeeldingen */
 img {
   max-width: 100%;
   height: auto;
   border-radius: 8px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   display: block;
-  margin: 20px auto; /* Zorgt ervoor dat de afbeeldingen gecentreerd worden */
+  margin: 10px auto;
 }
 
-/* Foto container instellingen */
+/* Foto-container */
 .photo-container {
   display: flex;
-  justify-content: center;
-  gap: 20px;
-  margin: 20px 0;
   flex-wrap: wrap;
-  width: 100%;
+  justify-content: center;
+  gap: 15px;
+  margin: 20px 0;
 }
 
 .photo-container img {
   width: 48%;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
-  display: block;
-  margin: 0 auto;
 }
 
-/* Footer instellingen */
+/* Footer */
 footer {
   background-color: #333;
   color: white;
   text-align: center;
   padding: 20px;
   margin-top: 40px;
-  border-top: 2px solid #444;
   width: 100%;
 }
 
-.footer-content p {
-  font-size: 14px;
-}
-
-.footer-links {
-  margin-top: 10px;
-}
-
-.footer-links a {
+footer nav a {
   color: #ddd;
   text-decoration: none;
   margin: 0 15px;
-  font-size: 14px;
 }
 
-.footer-links a:hover {
+footer nav a:hover {
   color: #fff;
 }
 
-/* Responsief ontwerp voor kleinere schermen */
+/* Responsief ontwerp */
 @media (max-width: 768px) {
   .container {
     width: 90%;
@@ -119,22 +94,6 @@ footer {
 
   h1 {
     font-size: 2rem;
-  }
-
-  .photo-container img {
-    width: 100%;
-    margin-bottom: 15px;
-  }
-
-  .footer-links a {
-    display: block;
-    margin-bottom: 10px;
-  }
-}
-
-@media (max-width: 480px) {
-  h1 {
-    font-size: 1.8rem;
   }
 
   .photo-container img {
